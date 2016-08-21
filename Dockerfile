@@ -16,6 +16,14 @@ RUN apt-get install -y       \
             pkg-config
 
 #
+# Prepare develop environment
+#
+RUN apt-get install -y       \
+            curl             \
+            vim              \
+            valgrind
+
+#
 # Install nginx to test trafficserver's HTTP/2 proxy features
 #
 RUN apt-get install -y nginx
